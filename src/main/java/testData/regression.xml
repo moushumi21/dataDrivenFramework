@@ -1,0 +1,15 @@
+<suite name="regression">
+	<test name="LoginTest">
+		<parameter name="username" value="demo@techfios.com"></parameter>
+		<parameter name="password" value="abc123" />
+		<!-- another way to close it. we can use this way if we don't pass anything
+		in between the opening and closing tags. -->
+		
+		<parameter name = "FullName" value= "Microsoft Excell"/>
+		<classes>
+			<class name="test.LoginTest" /> <!-- we need to give the path of LoginTest, which is "test". This is called classified path -->
+			<class name = "test.AddCustomerTest"/>
+		</classes>
+	</test>
+
+</suite>
